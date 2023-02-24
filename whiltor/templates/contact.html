@@ -1,0 +1,29 @@
+{% extends 'index.html' %}
+
+{% block contant %}
+
+
+<!-- ..............................  contact us form section .................................. -->
+
+<section>
+        {% load static %}
+       
+      <div class="mx-10 bg-[url('{% static 'image/contact_bgimg.png' %}')] mt-[-180px]" style="background-repeat: no-repeat; background-position: center; background-size: contain;">
+          <div class="bg-transparent w-96 h-96 rounded-xl translate-y-[380px] my-0 hidden lg:block"><img src="{% static 'image/w17.png' %}"></div>
+           <center><div class="bg-white lg:w-[50%] pb-10 lg:ml-[60px]">
+              <form>
+                <p class="text-3xl pt-5">Contant Us</p><br>
+               <i class="fa-solid fa-signature bg-[#FFCE00] text-white p-3 rounded-full text-xl"></i> <input class="w-[50%] border-b-2 border-gray-300 hover:outline-none outline-none hover:border-yellow-300 m-3 p-2 " type="text" name="" placeholder="Full Name"><br>
+              <i class="fa-regular fa-envelope-open bg-[#FFCE00] text-white p-3 rounded-full text-xl"></i>  <input class="w-[50%] border-b-2 border-gray-300 hover:outline-none outline-none hover:border-yellow-300 m-3 p-2  " type="text" name="" placeholder="E-Mail"><br>
+               <i class="fa-solid fa-phone bg-[#FFCE00] text-white p-3 rounded-full text-xl"></i> <input class="w-[50%] border-b-2 border-gray-300 hover:outline-none outline-none hover:border-yellow-300 m-3 p-2  " type="number" name="" placeholder="Contact Number "><br>
+                <i class="fa-solid fa-paper-plane bg-[#FFCE00] text-white p-3 rounded-full text-xl"></i>  <textarea class="w-[50%] border-b-2 border-gray-300 hover:outline-none outline-none hover:border-yellow-300 m-3 p-5  " type="textarea" name="" placeholder="Query"></textarea><br><br>
+                <button class="px-[60px] p-3 bg-[#FFCE00] text-white font-bold rounded-full">Submit</button>
+              </form>
+            </div></center>
+        </div>
+</section>
+  
+
+{% endblock %}
+
+ <!-- <div class="mx-10 my-0 bg-[url('/img/hero-pattern.svg')]"> -->

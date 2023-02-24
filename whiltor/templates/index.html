@@ -1,0 +1,396 @@
+{% block header %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>whiltor.com</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="static/style.css">
+
+</head>
+<style>
+
+</style>
+<body class="bg-[#EDEDED]">
+
+<!-- .................................  navabar section ................................... -->
+
+<nav class="bg-transparent border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900 ">
+  <div class="container flex flex-wrap items-center justify-between mx-auto">
+    {% load static %}
+        <img src="{% static 'image/whiltor.png' %}" class="h-20 mr-3 sm:h-20" alt="" />
+    <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg       md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:       focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+      <span class="sr-only">Open main menu</span>
+      <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+    </button>
+    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+      <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-transparent md:flex-row md:space-x-8 md:mt-0 md:text-sm    
+             md:font-medium md:border-0 md:bg-transparent dark:bg-transparent md:dark:bg-transparent dark:border-gray-700">
+        <li>
+          <a href="/" class="block py-2 pl-3 pr-4 text-white bg-yellow-400 rounded md:bg-transparent md:text-gray-700 md:p-0 dark:text-white md:hover:text-yellow-400 text-lg" aria-current="page">Home</a>
+        </li>
+        <li>
+          <a href="portfolio" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-400 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent text-lg">Portfolio</a>
+        </li>
+        <li>
+          <a href="services" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-400 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent text-lg">Services</a>
+        </li>
+        <li>
+          <a href="consultancy" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-400 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent text-lg">Consultancy</a>
+        </li>
+        <li>
+          <a href="about" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-400 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent text-lg">About</a>
+        </li>
+        <li>
+          <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-400 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent text-lg">Admin<svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
+          <!-- Dropdown menu -->
+          <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+              <ul class="py-1 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                <li>
+                  <a href="admin_login" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white text-lg">Admin Login</a>
+                </li>
+              </ul>
+          </div>
+         </li>
+        <li>
+          <a href="contact"><button class="w-32 h-10 bg-yellow-300 border rounded-xl mt-0 text-lg"><i class="fa-solid fa-phone bg-transparent text-lg"></i> &nbsp Contact</button>  </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!-- ............................... navbar section end...................................... -->
+{% endblock %}
+
+
+{% block contant %}
+  <!-- ..........................  home section .......................................... -->
+<div class="section">
+  <div class="flex  grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1">
+      <div class="mx-10 my-20">
+          <span class="type text-[30px] mt-5 lg:text-[60px] font-bold text-[#4F4F4F] m-auto"></span>
+          <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+          <script>
+              var typed = new Typed('.type', {
+                  strings: [
+                      'Strategize',
+                      'Innovate',
+                      'Transform',
+                  ],
+                  typeSpeed: 60,
+                  backSpeed: 60,
+                  loop: true,
+              });
+          </script>
+        <p class="text-2xl text-left mt-10">Your Vision With Whiltor</p>
+        <p class="mt-3 text-left">Connect with the most trusted and satisfactory consultancy firm all round the globe and<span class="font-bold"> Drive Your Journey To Peek!</span></p>
+       <button class="w-52 h-10 bg-yellow-300 border rounded-xl mt-5">Request A Callback  &nbsp<i class="fa-solid fa-phone bg-transparent"></i></button>
+      </div>
+
+      <div class=" my-20">
+        <img src="{% static 'image/w1.png' %}">
+      </div>
+  </div>  
+</div>
+
+  <!-- ..........................  home section .......................................... -->
+
+<!-- ...............................  grid box................... -->
+
+<div class="section">
+  <div class="mx-10 bg-transparent grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-6">
+
+      <div class=" bg-white p-5  rounded-xl border-b-4 border-[#F0E7FF]">
+         <div class="w-20 mt-[-50px] ml-[125px]"><i class="fa-sharp fa-solid fa-medal bg-transparent text-5xl bg-[#F0E7FF] text-[#8B6FC0] p-5 border rounded-xl"></i></div>
+         <p class="text-3xl px-3 text-left bg-white">Trust</p>
+         <p class="text-lg px-3 text-left p-3 bg-white">Trust Whiltor with your Business And Drive Your Journey To Peek!</p>
+      </div>
+
+       <div class=" bg-white p-5 rounded-xl border-b-4 border-[#D98A19]">
+         <div class="w-20 mt-[-50px] ml-[125px]"><i class="fa-solid fa-star bg-transparent text-5xl bg-[#FFEEBA] text-[#D98A19] p-5 border rounded-xl"></i></div>
+         <p class="text-3xl px-3 text-left bg-white">Loyalty</p>
+         <p class="text-lg px-3 text-left p-3 bg-white">Whiltor is known for providing quality service and its brand loyalty.</p>
+      </div>
+      
+      <div class=" bg-white p-5 rounded-xl border-b-4 border-[#a9e0e0]">
+         <div class="w-20 mt-[-50px] ml-[125px]"><i class="fa-solid fa-screwdriver-wrench bg-transparent text-5xl bg-[#a9e0e0] text-[#3cacac] p-5 border rounded-xl"></i></div>
+         <p class="text-3xl px-3 text-left bg-white">Service</p>
+         <p class="text-lg px-3 text-left p-3 bg-white">Grow and Expand your Business with our renowned consultancy services.</p>
+      </div>
+
+      <div class=" bg-white p-5 rounded-xl border-b-4 border-[#b0c4e7]">
+         <div class="w-20 mt-[-50px] ml-[125px]"><i class="fa-solid fa-face-smile bg-transparent text-5xl bg-[#b0c4e7] text-[#1A2942] p-5 border rounded-xl"></i></div>
+         <p class="text-3xl px-3 text-left bg-white">Satisfaction</p>
+         <p class="text-lg px-3 text-left p-3 bg-white">Whiltor is known for excellent customer services and satisfaction.</p>
+      </div>
+  </div>
+</div>
+<!-- ............................... end grid box................... -->
+
+
+<!-- ............................... backend data ................... -->
+
+<section>
+  <div class="mx-10 bg-transparent grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-6 mt-10">
+      {% for x in rec %}
+      <div class=" bg-white p-5  rounded-xl border-b-4 border-[#F0E7FF]">
+         <div class="w-20 mt-[-50px]">
+          {% if x.img %}
+          <img src="{{x.img}}" alt="image in here">
+          {% else %}
+          <i class="fa-sharp fa-solid fa-medal bg-transparent text-5xl bg-[#F0E7FF] text-[#8B6FC0] p-5 border rounded-xl"></i>
+          {% endif %}
+         </div>
+         <p class="text-3xl px-3 text-left bg-white">{{x.title}}</p>
+         <p class="text-lg px-3 text-left p-3 bg-white">{{x.data}}</p>
+      </div>
+      {% endfor %}
+  </div>
+</section>
+<!-- ............................... backend data end ................... -->
+
+
+<!-- ................................... business section ...................................... -->
+<div class="section">
+  {% for x in rec1 %}
+
+    <!-- <p class="text-4xl text-center my-[45px]">Achieve Your Dynamic Business Goals and <br> Build a Better Future with Whiltor</p> -->
+    <p class="text-4xl text-center my-[45px]">{{x.data1}}</p>
+  {% endfor %}
+  <div class="flex grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1">
+    <div class=""><img src="{% static 'image/w2.png' %}">  </div>
+    <div>
+      <p class="p-5 pt-[65px]">Whiltor ensures your company's long-term success by leveraging our expertise and conceptual understanding. Our goal is to carry out your plan, and your faith is our greatest strength. It's never been easier to connect with consulting services and launch your company into a new era of quick growth by implementing cutting-edge technology and marketing strategies.</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- <section>
+  <div class="mx-10 bg-transparent grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-6 mt-10">
+      {% for x in rec1 %}
+      <div class=" bg-white p-5">
+          <img src="{{x.img1}}" alt="image in here">
+         <p class="text-lg px-3 text-left p-3 bg-white">{{x.data1}}</p>
+      </div>
+      {% endfor %}
+  </div>
+</section> -->
+<!-- ............................... backend data end ................... -->
+
+
+
+<!-- .......................................  glimps section ............................ -->
+<div class="section">
+   <img src="{% static 'image/w9.png' %}">
+     <p class="text-5xl text-center bg-[#1A2942] text-white">GET A GLIMPSES</p>
+      <div class="flex grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 pl-20 bg-[#1A2942] pt-10">
+          <div class=" bg-[#1A2942]">
+          <iframe width="80%" class="aspect-video" src="https://www.youtube.com/embed/S-WPnIDovk4" title="Whiltor | Drive Your Journey to Peak" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> </div>
+
+           <!-- <img src="image/w11.jpg"> -->
+           <!-- <img src="image/w12.jpg"> -->
+          <div>
+            <iframe width="80%"  class="aspect-video" src="https://www.youtube.com/embed/QKL46wxu_ek" title="Whiltor | Achieve Dynamic Business Goals and Build a Better Future with Whiltor" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+      </div>
+  <img src="{% static 'image/w10.png' %}">
+</div>
+
+
+<!-- ................................ feature section ...................... -->
+
+<div class="circle">
+
+  <h1 class="text-4xl" style="text-align:center;">OUR FEATURING SERVICES</h1>
+    <div class="fe_01"> 
+        <div class="cir_02"><p> Create a powerful brand image that stands out in the market and increase your audience by ten folds.</p></div>
+        <div class="cir_03"><img src="{% static 'image/w14.png' %}"> </div>
+        <div class="feature" style="text-align:center;">01<span>Branding </span> </div>
+        <div class="cir_04"></div>
+    </div>
+    
+    <div class="fe_02">
+        <div class="cir_02"><p> Develop quick, modern, advanced products using cutting-edge technologies, and expand your customer base with ease.</p></div>
+        <div class="cir_03"><img src="{% static 'image/w15.png' %}"> </div>
+        <div class="feature" style="text-align:center;">02<span>Product</span> </div>
+        <div class="cir_04"></div>
+    </div>
+
+    <div class="fe_03">
+        <div class="cir_02"><p> Create a memorable virtual experience for your customers by displaying stunning and eye- catching graphics.</p></div>
+        <div class="cir_03"><img src="{% static 'image/w16.png' %}"></div>
+        <div class="feature" style="text-align:center;">03<span>Graphic</span> </div>
+        <div class="cir_04"></div>
+    </div>
+
+</div>
+
+
+
+
+<!-- ...................................... work section ................................... -->
+
+<div class="section">
+  <p class="text-4xl m-5 p-3 text-center">WORK WITH WHILTOR</p>
+  <div class="w-auto mx-10 bg-transparent grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-6 my-[100px]">
+      <div class=" bg-white p-5  border rounded-xl hover:translate-y-[-60px] hover:transition duration-700 ease-in-out ">
+         <img class="bg-transparent mt-[-100px]" src="{% static 'image/w7.png' %}">
+         <p class="text-2xl px-3 text-left bg-white">Confused??</p>
+         <p class="text-lg px-3 text-left p-3 bg-white">Are you seeking for a platform that can help your business expand by providing solutions?.</p>
+      </div>
+
+       <div class=" bg-white p-5  border rounded-xl hover:translate-y-[-60px] hover:transition duration-700 ease-in-out">
+         <img class="bg-transparent mt-[-100px]" src="{% static 'image/w8.png' %}">
+         <p class="text-2xl px-3 text-left bg-white">Learn About Whiltor</p>
+         <p class="text-lg px-3 text-left p-3 bg-white">Connect with us to learn more about Whiltor and how it can help you grow your business.</p>
+      </div>
+      
+      <div class=" bg-white p-5  border rounded-xl hover:translate-y-[-60px] hover:transition duration-700 ease-in-out">
+         <img class="bg-transparent mt-[-100px]" src="{% static 'image/w4.png' %}">
+         <p class="text-2xl px-3 text-left bg-white">Connect with Us</p>
+         <p class="text-lg px-3 text-left p-3 bg-white">Contact with us via our website, phone number, or any other social media platform.</p>
+      </div>
+
+      <div class=" bg-white p-5  border rounded-xl hover:translate-y-[-60px] hover:transition duration-700 ease-in-out">
+         <img class="bg-transparent mt-[-100px]" src="{% static 'image/w5.png' %}">
+         <p class="text-2xl px-3 text-left bg-white">Enjoy Success</p>
+         <p class="text-lg px-3 text-left p-3 bg-white">After you've connected with us, leave everything to us and drive your journey to peek.</p>
+      </div>
+  </div>
+</div>
+
+
+<!-- ................................... collabotare section ...................................... -->
+<div class="section">
+    <p class="text-4xl text-center my-[45px]">COLLABORATE WITH WHILTOR</p>
+  <div class="flex grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1">
+    <div class=""><img src="{% static 'image/w13.png' %}">  </div>
+    <div>
+      <p class="p-5 pt-[65px]">Collaboration is Always Better For a healthy and continual growth, connect with whiltor. Working with Whiltor provides you an edge over competitors in your field of expertise, allowing you to expand your business. We provide everything you need for your business to succeed, from consulting to development.</p>
+        <a href="#"><button class="w-28 h-10 bg-yellow-300 border rounded-xl mt-0"> Contact</button>  </a>
+    </div>
+  </div>
+</div>
+
+
+<!-- .................... benefits section .......................... -->
+<div class="section">
+  <h1 class="text-4xl text-center my-[45px]">BENEFITS</h1>
+  <div class="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1  be_box">
+
+      <!-- <div class=""> -->
+          <div class="be_box1 be_z1 transition duration-700 ">
+              <div class="be_box2"><i class="fa-solid fa-headset"></i><p style="color:black;"><br><br>Consultancy</p></div>
+          </div>
+          <div class="be_box1 be_z2 transition duration-700">
+            <div class="be_box2"><i class="fa-solid fa-bullhorn"></i><p style="color: black;"> <br> <br> Marketing</p></div>
+          </div>
+          <div class="be_box1 be_z3 transition duration-700">
+            <div class="be_box2"><i class="fa-solid fa-crown"></i><p style="color: black;"> <br> <br> Branding</p></div>
+          </div>
+          <div class="be_box1 be_z4 transition duration-700">
+            <div class="be_box2"><i class="fa-sharp fa-solid fa-gears"></i><p style="color: black;"> <br> <br> Product Development</p></div>
+          </div>
+
+          <div class="be_box1 be_z5 transition duration-700">
+            <div class="be_box2"><i class="fa-solid fa-chalkboard-user"></i><p style="color: black;"> <br> <br> Mentoring</p></div>
+          </div>
+          <div class="be_box1 be_z6 transition duration-700">
+            <div class="be_box2"><i class="fa-solid fa-users"></i><p style="color: black;"> <br> <br> Human Resource</p></div>
+          </div>
+          <div class="be_box1 be_z7 transition duration-700">
+          <div class="be_box2"><i class="fa-solid fa-network-wired"></i><p style="color: black;"> <br> <br> Technical Support</p></div>
+          </div>
+      <!-- </div> -->
+
+  </div>
+</div>
+
+<!-- ......................... ....  advantage section .................. -->
+
+<div class="section">
+    <p class="text-4xl text-center my-[45px]">ADVANTAGES OF CHOOSING US</p>
+  <div class="flex grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 bg-transparent px-10">
+    <div class=""><div class="bg-white p-[45px] border-b-4 border-blue-900 rounded-xl">
+                      <p class="text-xl bg-white font-bold">Personalised plans for your requirements</p>
+                      <p class="bg-white">For us, your vision is everything, and we will first understand your business and goals before recommending the best plans for your growth.</p>
+                  </div>
+                  <div class="bg-white p-[45px] border-b-4 border-blue-900 mt-3 rounded-xl">
+                      <p class="text-xl bg-white font-bold">Personalised plans for your requirements</p>
+                      <p class="bg-white">For us, your vision is everything, and we will first understand your business and goals before recommending the best plans for your growth.</p>
+                  </div>
+                  <div class="bg-white p-[45px] mt-3 border-b-4 border-blue-900 rounded-xl">
+                      <p class="text-xl bg-white font-bold">Personalised plans for your requirements</p>
+                      <p class="bg-white">For us, your vision is everything, and we will first understand your business and goals before recommending the best plans for your growth.</p>
+                  </div>
+      </div>
+    <div>
+      <img src="{% static 'image/w6.png' %}">
+      <!-- <p class="p-5 pt-[65px]"></p> -->
+    </div>
+  </div>
+</div>
+
+
+
+<!-- ............................. callback section ............................ -->
+
+<section>
+  <div class="grid lg:grid-cols-1 md:grid-cols-1 sm:grid-cols-1 mx-10 mt-10">
+    <div class="lg:flex md:flex shadow-2xl bg-white">
+        <div class=" p-10 ">
+           <p class="text-center text-3xl">Request a callback</p>
+           <p class="mt-3 text-left">Are you stuck on something that is interfering with your dream project? Connect with us now. We offer solutions for all of your challenges, from project development to branding and marketing, we can meet all of your requirements. With just a phone call, you may have all of your services delivered right to your door.</p>
+        </div>
+        <div>
+           <button class="w-36 p-2 rounded-full bg-[#609AB8] text-white lg:mt-[90px] md:mt-[90px] mr-3 ml-[100px] mt-[-50px] mb-3 hover:translate-x-[-100px] transition duration-700">Call Us </button>
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- ...........................  callback section end  ............................ -->
+{% endblock %}
+
+{% block footer %}
+<!-- ............................... footer section   ................... -->
+<div class="section">
+  <div class=" mx-10 bg-transparent grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-6 mt-[100px]">
+      <div class="p-5">
+         <p class="text-xl px-3 text-left font-bold">Get in Touch</p>
+         <p class="text-md px-3 text-left p-3">Don’t miss any updates of our new schemes and services!</p>
+         <input type="text" name="" placeholder="Email" style="border:2px solid black;"><br><br>
+          <a href="#"><button class="w-28 h-10 bg-yellow-300 border rounded-xl mt-0"><i class="fa-solid fa-phone bg-transparent text-white-100"></i>Subscribe</button>  </a>
+      </div>
+
+       <div class="p-5">
+         <p class="text-xl px-3 text-left font-bold">Download</p>
+         <p class="text-md px-3 text-left p-3">Home <br><br> About </p>
+      </div>
+      
+       <div class="p-5">
+         <p class="text-xl px-3 text-left font-bold">Services</p>
+         <p class="text-md px-3 text-left p-3">Consultancy <br><br> Contact <br><br> All Services</p>
+      </div>
+
+       <div class="p-5">
+         <p class="text-xl px-3 text-left font-bold">Connect the Network</p><br>
+          <a href="#"><i class="fa-brands fa-linkedin text-2xl ml-3"></i></a>
+          <i class="fa-brands fa-linkedin text-2xl ml-3"></i>
+          <i class="fa-brands fa-instagram text-2xl ml-3"></i>
+          <i class="fa-brands fa-twitter text-2xl ml-3"></i><br>
+         <p class="text-md px-3 text-left p-3">Copyright © 2022 | Whiltor | All rights reserved | Powered by</p>
+                 <a href="https://tdpvista.in/">TDPVista</a>
+      </div>
+  </div>
+    <img class="lg:mt-[-250px] md:mt-[-150px]" src="{% static 'image/w3.png' %}">
+</div>
+{% endblock %}
+<script src="https://unpkg.com/flowbite@1.6.1/dist/flowbite.min.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,275 @@
+{% extends 'index.html' %}
+
+{% block contant %}
+<!-- ...............................  content change section .......................... -->
+
+<style >
+    #d_change1 {
+      opacity: 0;
+      transition: all 1s ease-in-out;
+    }
+    #d_change2 {
+      opacity: 0;
+      transition: all 1s ease-in-out;
+    }
+  #radio1:checked~#d_change1{
+      opacity: 1;
+  }
+  #radio2:checked~#d_change2{
+      opacity: 1;
+  }
+  input {
+    display: none;
+  }
+  </style>
+  
+  <div class="relative">
+      <input type="radio" name="butt1" checked id="radio1">
+      <input type="radio" name="butt1" id="radio2">
+      <section id="d_change1">
+       <div class="mx-10 grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 absolute top-0 left-0">
+  
+             <div class="p-5 ">
+                 <div class=""><i class="fa-solid fa-globe bg-transparent text-5xl bg-[#ffdc2d] text-white p-3 border rounded-xl "></i> <p class="text-xl px-3 ml-[100px] mt-[-60px]">Web App</p>
+                 </div>
+                 <div class="mt-[100px]"><i class="fa-solid fa-mobile-screen bg-transparent text-5xl bg-[#ffdc2d] text-white p-5 border rounded-xl "></i> <p class="text-xl px-3 ml-[100px] mt-[-60px]">Mobile App</p>
+                 </div>
+                 <div class="mt-[100px]"><i class="fa-solid fa-desktop bg-transparent text-5xl bg-[#ffdc2d] text-white p-3 border rounded-xl"></i> <p class="text-xl px-3 ml-[100px] mt-[-60px]">System Software</p>
+                 </div>
+                 
+            </div>
+            {% load static %}
+            <div class="">
+                 <img src="{% static 'image/w_ser8.png' %}">
+             </div>
+  
+            <div class=" p-5">
+               <p class="text-3xl text-left">Deploy your Vision to Product</p>
+               <p class="text-left mt-3">Get your work done with the specification of technical speciality and accuracy</p>
+               <p class="mt-10">Whiltor is tagged and proven to be one of the largest and trsuted product development firm and consists a team of highly experienced developers and innovators rich in many widely used and specialization technologies serving a grand count of visionaries. </p>
+               <button class="rounded-xl bg-white mt-5 w-32 p-3">Know More</button>
+            </div>
+  
+        </div> 
+      </section>
+  
+      <!-- ...... second section ...... -->
+      <section id="d_change2">
+       <div class="mx-10 grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 absolute top-0 left-0">
+  
+            <div class=" p-5">
+               <p class="text-3xl text-left">Scale your Vision to Market</p>
+               <p class="text-left mt-3">Get the best solutions for Hiring and Marketing with Specialized Consultancy </p>
+               <p class="mt-10">Every search and vision comes in action with the best consultation and is uplifted by the Human Resource and Marketing Team . </p>
+               <button class="rounded-xl bg-white mt-5 w-32 p-3">Know More</button>
+            </div>
+            
+            <div class="">
+                 <img src="{% static 'image/w_ser9.png' %}">
+             </div>
+  
+            <div class="p-5 ">
+                 <div class=""><i class="fa-solid fa-headphones bg-transparent text-5xl bg-[#ffdc2d] text-white p-3 border rounded-xl "></i> <p class="text-xl px-3 ml-[100px] mt-[-60px]">Web App</p>
+                 </div>
+                 <div class="mt-[100px]"><i class="fa-solid fa-users-gear bg-transparent text-5xl bg-[#ffdc2d] text-white p-5 border rounded-xl "></i> <p class="text-xl px-3 ml-[100px] mt-[-60px]">Mobile App</p>
+                 </div>
+                 <div class="mt-[100px]"><i class="fa-solid fa-envelopes-bulk bg-transparent text-5xl bg-[#ffdc2d] text-white p-3 border rounded-xl"></i> <p class="text-xl px-3 ml-[100px] mt-[-60px]">System Software</p>
+                 </div>
+            </div>
+  
+  
+        </div> 
+      </section>
+  </div>
+  
+  <script>
+  var element=1;
+  setInterval(function() {
+    if(element==2)
+      {
+        element=1
+      }
+    else
+    {
+      element+=1
+    }
+    document.getElementById("radio"+element).click();
+  }, 3000);
+  </script>
+  
+  
+  <!-- ...............................  content change section end .......................... -->
+  
+  
+  <!-- ...............................  grid box section ................... -->
+  
+  <div class="section lg:mt-[450px] md:mt-[1000px] sm:mt-[1200px] mt-[1200px]">
+    <div class="mx-10 bg-transparent grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6">
+  
+         <div class=" bg-white p-5 rounded-xl border-b-4 border-[#FFDBE9]">
+           <div class="w-20 mt-[-50px] ml-[125px]"><i class="fa-sharp fa-solid fa-gears bg-transparent text-5xl bg-[#FFDBE9] text-[#F7316E] p-5 border rounded-xl"></i></div>
+           <p class="text-3xl px-3 text-left bg-white">Development</p>
+           <p class="text-lg px-3 text-left p-3 bg-white">Whiltor is known for providing quality service and its brand loyalty.</p>
+        </div>
+        
+        <div class=" bg-white p-5 rounded-xl border-b-4 border-[#a9e0e0]">
+           <div class="w-20 mt-[-50px] ml-[125px]"><i class="fa-solid fa-pen-nib bg-transparent text-5xl bg-[#a9e0e0] text-[#3cacac] p-5 border rounded-xl"></i></div> 
+           <p class="text-3xl px-3 text-left bg-white">Designing</p>
+           <p class="text-lg px-3 text-left p-3 bg-white">Grow and Expand your Business with our renowned consultancy services.</p>
+        </div>
+  
+        <div class=" bg-white p-5 rounded-xl border-b-4 border-[#b0c4e7]">
+           <div class="w-20 mt-[-50px] ml-[125px]"><i class="fa-solid fa-headphones-simple bg-transparent text-5xl bg-[#b0c4e7] text-[#1A2942] p-5 border rounded-xl"></i></div>
+           <p class="text-3xl px-3 text-left bg-white">Consultancy</p>
+           <p class="text-lg px-3 text-left p-3 bg-white">Whiltor is known for excellent customer services and satisfaction.</p>
+        </div>
+    </div>
+  </div>
+  <!-- ............................... end grid box................... -->
+  
+  
+  
+  <!-- ..............................  unique section .................................. -->
+  <div class="section">
+      <p class="text-3xl mt-[50px] text-center font-bold">What Makes Us Unique</p>
+      <p class="text-xl text-center mt-5">What sets us apart is our ability to think beyond the box.</p>
+  
+      <div class="flex  grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1">
+  
+        <div class="pl-[200px] w-[80%]"><img src="{% static 'image/w_cst9.png' %}"></div>
+        <div class="mx-10 my-20">
+          <p class="mt-3 text-left">Whiltor is renowned for providing high-quality marketing, branding, and development services. Whiltor can assist you in turning your concept into a product. We analyse the model before strategizing, planning, and implementing to make your goal a reality.Whiltor is assisting thousands of businesses in growing and establishing a brand image that will help them reach their business objectives more quickly.</p>
+        </div>
+    </div>  
+  </div>
+  
+  
+  <!-- ............................... first card section ................... -->
+  
+  <div class="section mt-[200px]">
+    <div class="lg:mx-52 mx-20 bg-transparent grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-10">
+  
+         <div class=" bg-white p-5 rounded-xl ">
+           <img class="w-52 mt-[-195px] ml-[50px]" src="{% static 'image/w_ser1.png' %}">
+           <p class="text-3xl px-3 text-left bg-white">Product Development</p>
+           <p class="text-lg px-3 text-left p-3 bg-white">A well begun is half done. We give you the perfect beginning, provide you with every resource you need to start your product.</p>
+        </div>
+        
+        <div class="bg-white p-5 rounded-xl lg:mt-0 md:mt-0 sm:mt-[150px] mt-[150px] ">
+           <img class="w-60 mt-[-210px] ml-[50px]" src="{% static 'image/w_ser2.png' %}">
+           <p class="text-3xl px-3 text-left bg-white">Designing</p>
+           <p class="text-lg px-3 text-left p-3 bg-white">Grow and Expand your Business with our renowned consultancy .We give you the perfect beginning, provide you with every resource services.</p>
+        </div>
+  
+  
+    </div>
+  </div>
+  
+  <!-- ............................... card section end  ................... -->
+  
+  <!-- ............................... second card section ................... -->
+  
+  <div class="section mt-[200px]">
+    <div class="mx-20 mx-20 bg-transparent grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-10">
+  
+         <div class=" bg-white p-5 rounded-xl ">
+           <img class="w-52 mt-[-120px] ml-[50px]" src="{% static 'image/w_ser3.png' %}">
+           <p class="text-3xl px-3 text-left bg-white">Development</p>
+           <p class="text-lg px-3 text-left p-3 bg-white">A well begun is half done. We give you the perfect beginning, provide you with every resource you need to start your product.</p>
+        </div>
+        
+        <div class=" bg-white p-5 rounded-xl lg:mt-0 md:mt-0 sm:mt-[70px] mt-[70px]">
+           <img class="w-52 mt-[-120px] ml-[50px] " src="{% static 'image/w_ser4.png' %}">
+           <p class="text-3xl px-3 text-left bg-white">Development</p>
+           <p class="text-lg px-3 text-left p-3 bg-white">A well begun is half done. We give you the perfect beginning, provide you with every resource you need to start your product.</p>
+        </div>
+  
+        <div class=" bg-white p-5 rounded-xl lg:mt-0 sm:mt-[70px] md:mt-[70px] mt-[70px]">
+           <img class="w-52 mt-[-120px] ml-[50px]" src="{% static 'image/w_ser5.png' %}">
+           <p class="text-3xl px-3 text-left bg-white">Development</p>
+           <p class="text-lg px-3 text-left p-3 bg-white">A well begun is half done. We give you the perfect beginning, provide you with every resource you need to start your product.</p>
+        </div>
+  
+  
+    </div>
+  </div>
+  
+  <!-- ............................... card section end  ................... -->
+  
+  
+  <!-- .............................. what we do section ........................ -->
+  
+  <div class="section">
+      <p class="text-3xl mt-[50px] text-center font-bold">What we do?</p>
+      <p class="text-xl text-center mt-5">Our Artificial Intelligence powered tools use millions of project data</p>
+      <div class="flex  grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1">
+        <div class="mx-10 my-20">
+            <p class="text-7xl text-right">1</p>
+          <p class="mt-3 text-2xl text-right">Want to start your own business but lack the necessary team, skills, or resources?</p>
+        </div>
+        <div class="w-[40%] mt-5"><img src="{% static 'image/w_ser5.png' %}"></div>
+      </div> 
+  
+      <div class="flex  grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1">
+        <div class="w-[40%] m-5 lg:ml-[350px]"><img src="{% static 'image/w_ser1.png' %}"></div>
+        <div class="mx-10 my-20">
+            <p class="text-7xl text-left">2</p>
+          <p class="mt-3 text-2xl text-right">Don't worry! You are at the right place. Whiltor will assist you.</p>
+        </div>
+      </div> 
+  
+      <div class="flex  grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1">
+        <div class="mx-10 my-20">
+            <p class="text-7xl text-right">3</p>
+          <p class="mt-3 text-2xl text-right">Give us a call or send us a message, and we'll figure out a solution for you.</p>
+        </div>
+        <div class="w-[40%] mt-5"><img src="{% static 'image/w_ser3.png' %}"></div>
+      </div>  
+  
+       <div class="flex  grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1">
+        <div class="w-[40%] m-5 lg:ml-[350px]"><img src="{% static 'image/w_ser2.png' %}"></div>
+        <div class="mx-10 my-20">
+            <p class="text-7xl text-left">4</p>
+          <p class="mt-3 text-2xl text-right">You may even hand over your project to us, and we will finish it according to your specifications.</p>
+        </div>
+      </div> 
+  
+      <div class="flex  grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1">
+        <div class="mx-10 my-20">
+            <p class="text-7xl text-right">5</p>
+          <p class="mt-3 text-2xl text-right">It's that easy to collaborate with us: connect, share, and execute, and you're done.</p>
+        </div>
+        <div class="w-[40%] mt-5"><img src="{% static 'image/w_ser4.png' %}"></div>
+      </div>  
+  
+  </div>
+  
+  
+  <!-- .............................. what we do section end ..................... -->
+  
+  <!-- ............................. callback section ............................ -->
+  
+  <section>
+      <div class="grid lg:grid-cols-1 md:grid-cols-1 sm:grid-cols-1 mx-10">
+       <img class="scale-75 mx-auto animate-spin transition duration-700 ease-in-out" src="{% static 'image/book-service.png' %}">
+      <div class="lg:flex md:flex shadow-2xl bg-white -mt-10">
+          <div class=" p-10 ">
+             <p class="text-center text-3xl">Request a callback</p>
+                  <p class="mt-3 text-left">Are you stuck on something that is interfering with your dream project? Connect with us now. We offer solutions for all of your challenges, from project development to branding and marketing, we can meet all of your requirements. With just a phone call, you may have all of your services delivered right to your door.</p>
+          </div>
+          <div class="">
+                  <button class="w-36 p-2 rounded-full bg-[#609AB8] text-white lg:mt-[90px] md:mt-[90px] mr-3 ml-[100px] mt-[-50px] mb-3">Call Us </button>
+          </div>
+      </div>
+  </div>
+  </section>
+  
+  <!-- ...........................  callback section end  ............................ -->
+  
+{% endblock %}
+
+
+
+
+
+

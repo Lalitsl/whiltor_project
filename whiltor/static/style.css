@@ -1,0 +1,341 @@
+
+* {
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/*............................ index.html css section ........................*/
+
+.cir_02{
+      background-color:#EDEDED;
+      width: 295px;
+      height: 298px;
+      border-radius: 150px;
+      margin-left:40px;
+      margin-top:150px;
+      border-right:10px solid black;
+      display: inline-block;
+      position:relative;
+     
+}
+.cir_03 {
+    background-color: white;
+    width: 150px;
+    height: 150px;
+    border-radius: 80px;
+    margin-left: 110px;
+    transform: translateY(-366px);
+}
+.cir_03 img {
+    width: 70px;
+    height: 70px;
+    margin-top:40px;
+    margin-left:40px;
+    background-color: transparent;
+}
+.cir_04 {
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    margin-left: 170px;
+    transform: translateY(-208px);
+    box-shadow: 3px 3px 3px black;  
+}
+.circle {
+    display:inline-block;
+    position: relative;
+}
+.fe_01 {
+    float: left;
+}
+.fe_02 {
+    margin-left: 50px;
+    float: left;
+}
+.fe_03 {
+    float: right;
+    margin-left: 50px;
+}
+.feature {
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-top: -351px;
+    margin-left: 74px;
+    position: absolute;
+    z-index: 1000;
+
+}
+.feature span {
+    background-color: transparent;
+    margin-left:15px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.cir_02 p {
+    background-color: transparent;
+    margin-top:170px;
+    text-align: center;
+
+}
+
+/*........................benefits sections .............................*/
+
+.be_box {
+/*  margin:50px;*/
+/*  margin-left:-300px;*/
+padding-left: 30px;
+}
+.be_box1 {
+  height:300px;
+  width:80%;
+  background-color:white;
+/*  box-shadow: 1px 1px 1px 1px black;*/
+  transition: width 2s;
+  display:inline-flex;
+/*  position: relative;*/
+  margin-top: 50px;
+  margin-left: 30px;
+}
+
+.be_box2 {
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  background-color: grey;
+  text-align: center;
+  margin-left:60px;
+     margin-top: 80px;
+}
+.be_box2 i {
+  font-size:60px;
+  margin-top: 30px;
+  background-color: transparent;
+
+}
+.be_z1 div {
+      background-color: #ffd861;
+    color:#d98a19;
+}
+.be_z1:hover{
+  background-color: #ffd861;
+  transform: translateY(-30px);
+}
+.be_z1:hover div{
+  background-color: white;
+}
+
+.be_z2 div {
+      background-color: #b8f9d3;
+      color:#4fc391;
+}
+.be_z2:hover{
+  background-color: #b8f9d3;
+  transform: translateY(-30px);
+}
+.be_z2:hover div{
+  background-color: white;
+}
+
+
+.be_z3 div {
+      background-color: #CEB2FC;
+    color:#8b6fc0;
+}
+.be_z3:hover{
+  background-color: #CEB2FC;
+  transform: translateY(-30px);
+}
+.be_z3:hover div{
+  background-color: white;
+}
+
+.be_z4 div {
+      background-color: #DCE9FF;
+    color:#3b6cb7;
+}
+.be_z4:hover{
+  background-color: #DCE9FF;
+  transform: translateY(-30px);
+}
+.be_z4:hover div{
+  background-color: white;
+}
+
+.be_z5 div {
+      background-color: #A9E0E0;
+    color:#3CACAC;
+}
+.be_z5:hover{
+  background-color: #A9E0E0;
+  transform: translateY(-30px);
+}
+.be_z5:hover div{
+  background-color: white;
+}
+
+.be_z6 div {
+      background-color: #B0C4E7;
+    color:#1A2942;
+}
+.be_z6:hover{
+  background-color: #B0C4E7;
+  transform: translateY(-30px);
+}
+.be_z6:hover div{
+  background-color: white;
+}
+
+
+.be_z7 div {
+      background-color: #FFDBE9;
+    color:#F7316E;
+}
+.be_z7:hover{
+  background-color: #FFDBE9;
+  transform: translateY(-30px);
+}
+.be_z7:hover div{
+  background-color: white;
+}
+
+/*.............................. end index.html ...................................................*/
+
+
+/*......................... consultancy.html section ......................................*/
+
+.semicircle-infographic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+/*  background-color: red;*/
+
+}
+.semicircle-infographic .center-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 250px;
+  min-height: 250px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  margin-right: -125px;
+  z-index: 1;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+/*  background-color: green;*/
+}
+.semicircle-infographic .center-circle .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0px 0px 30px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+
+.semi-circle-container {
+  min-width: 290px;
+  padding: 50px 0px;
+  overflow: hidden;
+  position: relative;
+}
+.semi-circle-container .semi-circle {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  margin-left: -250px;
+  position: relative;
+  overflow: hidden;
+}
+.semi-circle-container .circle-section {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.4);
+}
+.semi-circle-container .circle-section:nth-child(1) {
+/*  background-color: #900C3E;*/
+  background-color: #1A2942;
+  left: 250px;
+}
+.semi-circle-container .circle-section:nth-child(2) {
+/*  background-color: #C70039;*/
+background-color:#04396C;
+  transform: rotate(45deg) translate(50%, -50%);
+}
+.semi-circle-container .circle-section:nth-child(3) {
+/*  background-color: #FF5733;*/
+  background-color: #035B96;
+  transform: rotate(90deg) translate(50%, -50%);
+}
+.semi-circle-container .circle-section:nth-child(4) {
+/*  background-color: #ff9800;*/
+  background-color: #609AB8;
+  transform: rotate(135deg) translate(50%, -50%);
+}
+.semi-circle-container .inner-circle-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+}
+.semi-circle-container .inner-circle-container .inner-circle {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  background: #ffffff;
+  border-radius: 50%;
+  border: 5px solid;
+  font-weight: bold;
+  font-size: 3rem;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  transform: translate(-50%, -50%);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.semi-circle-container .inner-circle-container .inner-circle:hover {
+  transform: translate(-50%, -50%) scale(1.2);
+}
+.semi-circle-container .inner-circle-container .inner-circle:nth-of-type(1) {
+  left: 28%;
+  top: 12%;
+  border-color: #1A2942;
+  color: #1A2942;
+}
+.semi-circle-container .inner-circle-container .inner-circle:nth-of-type(2) {
+  left: 79%;
+  top: 35%;
+  border-color: #04396C;
+  color: #04396C;
+}
+.semi-circle-container .inner-circle-container .inner-circle:nth-of-type(3) {
+  left: 79%;
+  top: 66%;
+  border-color: #035B96;
+  color: #035B96;
+}
+.semi-circle-container .inner-circle-container .inner-circle:nth-of-type(4) {
+  left: 28%;
+  top: 88%;
+  border-color: #609AB8;
+  color: #609AB8;
+}
+
+
+/*........................ consultancy.html end ...........................................*/
+
+
+
+
+

@@ -1,0 +1,123 @@
+{% extends 'index.html' %}
+
+{% block header %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>whiltor.com</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="static/style.css">
+
+</head>
+<style>
+
+</style>
+<body class="bg-[#EDEDED]">
+
+<!-- .................................  navabar section ................................... -->
+
+<nav class="bg-transparent border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900 ">
+  <div class="container flex flex-wrap items-center justify-between mx-auto">
+    {% load static %}
+        <img src="{% static 'image/whiltor.png' %}" class="h-20 mr-3 sm:h-20" alt="" />
+    <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg       md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:       focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+      <span class="sr-only">Open main menu</span>
+      <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+    </button>
+    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+      <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-transparent md:flex-row md:space-x-8 md:mt-0 md:text-sm    
+             md:font-medium md:border-0 md:bg-transparent dark:bg-transparent md:dark:bg-transparent dark:border-gray-700">
+        <li>
+          <a href="/" class="block py-2 pl-3 pr-4 text-white bg-yellow-400 rounded md:bg-transparent md:text-gray-700 md:p-0 dark:text-white md:hover:text-yellow-400 text-lg" aria-current="page">Home</a>
+        </li>
+        <li>
+          <a href="portfolio" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-400 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent text-lg">Portfolio</a>
+        </li>
+        <li>
+          <a href="services" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-400 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent text-lg">Services</a>
+        </li>
+        <li>
+          <a href="consultancy" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-400 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent text-lg">Consultancy</a>
+        </li>
+        <li>
+          <a href="about" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-400 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent text-lg">About</a>
+        </li>
+        <li>
+          <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-400 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent text-lg">Operations <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
+          <!-- Dropdown menu -->
+          <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+              <ul class="py-1 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                <li>
+                  <a href="addcard" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white text-lg">Add Card</a>
+                </li>
+                <li>
+                  <a href="addachieve" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white text-lg">Add Achieve</a>
+                </li>
+                <li>
+                  <a href="showachieve" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white text-lg">show Achieve</a>
+                </li>
+                <li>
+                    <a href="showcard" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white text-lg">Show Admin Card</a>
+                </li>
+                <li>
+                    <a href="showcard" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white text-lg">Delete Card</a>
+                </li>
+                <li>
+                    <a href="usercard" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white text-lg">Show User Card</a>
+                </li>
+                <li>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white text-lg">Logout</a>
+                </li>
+              </ul>
+          </div>
+         </li>
+        <li>
+          <a href="contact"><button class="w-32 h-10 bg-yellow-300 border rounded-xl mt-0 text-lg"><i class="fa-solid fa-phone bg-transparent text-lg"></i> &nbsp Contact</button>  </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!-- ............................... navbar section end...................................... -->
+
+
+{% endblock %}
+
+{% block contant %}
+    <p class="text-xl font-bold font-mono bg-white text-green-500 p-1 w-80 animate-bounce ">Welcome to Admin Panel....</p>
+
+<section>
+    <div>
+      <center><table class="table-auto bg-white border-separate border-spacing-5 border border-slate-400 rounded-2xl ">
+            <thead>
+              <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Operation</th>
+              </tr>
+            </thead>
+            <tbody>
+                {% for x in rec %}
+              <form action="deletecard">
+              <tr>
+                <td>
+                    <input type="number" readonly value="{{x.id}}" name="id" class="bg-transparent w-40 pl-10">
+                </td>
+                <td  class="ml-3">{{x.title}}</td>
+                <td  class="ml-3">
+                    <button type="submit" class="rounded-xl bg-yellow-300 p-2">Delete</button>
+                </td>
+              </tr>
+              </form>
+              {% endfor %}
+            </tbody>
+          </table></center>
+    </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,36 @@
+{% extends 'admin.html' %}
+
+{% block contant %}
+
+
+<section>
+    <div class="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 grid-cols-1">
+            <div class="w-full max-w-md ml-10">
+                <form class="bg-blue-200 shadow-md rounded-2xl px-8 pt-6 pb-8 mb-4" action="achieve1" method="POST" enctype="multipart/form-data">
+                    {% csrf_token %}
+                <p class="text-center underline font-bold">Achieve Information</p> <br>
+                <p class="text-center text-xl font-bold text-green-500 my-3">{{rec01}}</p>
+                <p class="text-center text-xl font-bold text-red-500 my-3">{{rec02}}</p>
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2">Enter Achieve Image </label>
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="achieveimg" type="file" placeholder="Enter Card Image">
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Enter Achieve Data</label>
+                    <textarea name="achievedata" id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Write data here..."></textarea>
+                </div>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">Add Achieve </button>
+                <a href="admin" type="button" class="bg-blue-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline ml-5" type="submit">Admin</a>
+
+                </form>
+               
+            </div>
+
+            <div>
+                <!-- <img src="https://todaynewsspot.com/wp-content/uploads/2020/01/pcquest.jpg"> -->
+            </div>
+
+    </div>
+</section>
+
+{% endblock %}

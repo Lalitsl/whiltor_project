@@ -1,0 +1,202 @@
+{% extends 'index.html' %}
+
+{% block contant %}
+
+
+
+<!-- .............................  who we are section ........................................... -->
+<section>
+	<div class="flex  grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1">
+
+      <div class="mx-10 my-20">
+      	<p class="text-3xl mt-[50px] font-bold">Who we are?</p>
+        <p class="mt-5 text-left">Whiltor is a consulting service that can help you with all of your professional decisions and ideas by providing you with powerful and clever solutions. With our extensive knowledge, precise solutions, and user-friendly interface, we take you from planning to implementation. We are a team of extremely talented professionals who are passionate about what they do and who collaborate to develop the best approach for identifying, assessing, and answering your concerns. Whiltor is that point of contact that brings accomplishment at your footsteps.</p>
+         <a href="contact.html"><button class="w-28 h-10 bg-yellow-300 border rounded-xl mt-10">Get Started</button></a>
+
+      </div>
+      {% load static %}
+      <div class=""><img src="{% static 'image/about-us-landing.png' %}"></div>
+
+
+    </div>  
+</section>
+
+<!-- ............................   end who we are section ...................................... -->
+
+
+<!-- ...............................  grid box section ................... -->
+<section  class="section mt-[100px]">
+  <div class="mx-10 bg-transparent grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6">
+ 
+       <div class="bg-white p-5 rounded-xl">
+	       <p class="text-2xl px-3 text-center translate-y-10 ">TARGET</p>
+	        <p class="text-lg px-3 text-right p-3"><img src="{% static 'image/service-1.png' %}" class="w-10">Think of your dream work, set your goal, step ahead and start your project with us.</p>
+        </div>
+
+      <div class="bg-white p-5 rounded-xl">
+	       <p class="text-2xl px-3 text-center translate-y-10 ">CONSULT</p>
+	        <p class="text-lg px-3 text-right p-3"><img src="{% static 'image/service-2.png' %}" class="w-10">Do not proceed with a doubt in your head. Consult us when .</p>
+        </div>
+
+      <div class="bg-white p-5 rounded-xl">
+	       <p class="text-2xl px-3 text-center translate-y-10 ">ACHIEVE</p>
+	        <p class="text-lg px-3 text-right p-3"><img src="{% static 'image/service-3.png' %}" class="w-10">With the providential help of Whiltor, achieve the target set.</p>
+        </div>
+
+  </div>
+</section>
+<!-- ............................... end grid box................... -->
+
+
+<!-- ............................... what we do ......................... -->
+
+<section>
+	<div>
+		<p class="text-3xl mt-[50px] text-center font-bold">What we do?</p>
+		<p class="text-lg text-center mt-5">Whiltor bridges the gap between your vision and it's reality with the best in class services, assuring trust and excellence in each task.</p>
+	</div>
+
+	<div class="flex  grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1">
+
+	    <div class="pl-[200px] w-[80%]"><img src="{% static 'image/w_ser6.png' %}"></div>
+        <div class="mx-10 my-20">
+	      	<div class="grid lg:grid-cols-1 md:grid-cols-2 sm:grid-cols-1 grid-cols-1">
+	        <p class="mt-3 text-left">Whiltor is renowned for providing high-quality marketing, branding, and development services. Whiltor can assist you in turning your concept into a product. We analyse the model before strategizing, planning, and implementing to make your goal a reality.Whiltor is assisting thousands of businesses in growing and establishing a brand image that will help them reach their business objectives more quickly.</p>
+	        </div>
+
+	        <div class="lg:flex md:flex">
+              <!-- <div> -->
+      	        <img class="w-28" src="{% static 'image/target-outline.gif' %}">
+                 <img class="w-28" src="{% static 'image/consultation-outline.gif' %}">
+                  <img class="w-28 bg-transparent" src="{% static 'image/success-outline.gif' %}">
+              <!-- </div> -->
+	        </div>
+        </div>
+</section>
+
+<!-- .......................... what we do ............................. -->
+
+
+<!-- ............................... Our Vaules section ................... -->
+<section>
+    <p class="text-3xl  text-center font-bold">Our Vaules</p>
+
+  <div class="mx-10 bg-transparent grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6 mt-[150px]">
+
+      <div class="bg-white p-5 rounded-xl">
+        <img class=" mt-[-150px] w-60 ml-10" src="{% static 'image/w_ser3.png' %}">
+        <p class="text-2xl px-3 text-center ">MISSION</p>
+        <p class="text-lg px-3 p-3">We at Whiltor are committed to bring the best in our society and to remove hesitation from our youth to start a new venture of thier own due lack of knowledge of a technology or resources. We are continously working to motivate and provide sevices to our youth so that they always take a step ahead and achieve their targets.</p>
+      </div>
+
+      <div class="bg-white p-5 rounded-xl  lg:mt-0  md:mt-0 sm:mt-[120px] mt-[120px]  ">
+        <img class=" mt-[-150px] w-60 ml-10" src="{% static 'image/w_ser4.png' %}">
+        <p class="text-2xl px-3 text-center ">VISION</p>
+        <p class="text-lg px-3 p-3">Our vision is to deliver happiness and satisfation to our customers and innovaters. We see our company bringing better opportunities for the passionate who are people willing to take a step forward and achieve their goals. We aim to provide customer-valued solutions with the best prices, products and services.</p>
+      </div>
+
+      <div class="bg-white p-5 rounded-xl lg:mt-0  md:mt-[120px] sm:mt-[120px] mt-[120px]  ">
+        <img class=" mt-[-150px] w-60 ml-10" src="{% static 'image/w_ser5.png' %}">
+        <p class="text-2xl px-3 text-center ">GOAL</p>
+        <p class="text-lg px-3 p-3">Our ultimate goal is to make Whiltor the first choice for product development, branding and social media management and to be the global leader in supporting the development of the next generation of technology and projects. Our goal is to be the company that best understands your needs and provides the best solutions to your business.</p>
+      </div>
+
+  </div>
+</section>
+<!-- ............................... Our values section end ........................ -->
+
+
+<!-- ...............................  what we do (2) section ................... -->
+<section>
+  <div class="lg:mx-[200px] mx-10 grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6 mt-10">
+ 
+      <div class="bg-white p-5 rounded-xl h-fit">
+        <div class=""><i class="fa-solid fa-circle-question bg-transparent text-5xl bg-[#dce9ff] text-[#3b6cb7] p-3 border rounded-xl"></i></div>
+        <p class="text-xl px-3 text-center">CONFUSED??</p>
+        <p class=" p-3">Confused where to go and what to do next or how to solve an error or bug? Don't worry you are at the right place. We have solutions to all your problems. Give us a call and get your error solved.</p>
+      </div>
+
+      <div class="bg-white p-5 rounded-xl">
+        <div class=""><i class="fa-solid fa-bahai bg-transparent text-5xl bg-[#a9e0e0] text-[#3cacac] p-3 border rounded-xl"></i></div> 
+        <p class="text-xl px-3 text-center">WE HAVE AN ANSWER.!!</p>
+        <p class=" p-3">Imagine all your errors or bugs being solved in a minute with just a call!! Moreover, getting your project done by someone else with all the specifications and features you need. Is it less than a miracle? Yes, whiltor performs this miracle! Get your errors solved or cherry to the cake get your project done by our expert team.</p>
+      </div>
+
+      <div class="bg-white p-5 rounded-xl h-fit">
+        <div class=""><i class="fa-solid fa-link bg-transparent text-5xl bg-[#b0c4e7] text-[#1a2942] p-3 border rounded-xl"></i></div>
+        <p class="text-xl px-3 text-center">JOIN US!!</p>
+        <p class=" p-3">Shake your hands with us and you will never face any technology related issues anymore. We assure to be your best friend who will always be there in any problem.</p>
+      </div>
+
+  </div>
+</section>
+<!-- ...............................  what we do (2) section end ................... -->
+
+<!-- ............................. subscribe section ............................ -->
+
+<section>
+  <div class="grid lg:grid-cols-1 md:grid-cols-1 sm:grid-cols-1 lg:mx-[100px] sm:mx-[50px] mx-[50px] bg-[#1A154F] mt-10 rounded-lg">
+        <div class="p-10 lg:mx-[200px] md:mx-[100px]">
+           <p class="text-center text-3xl text-white">Connect With Us Now</p>
+           <p class="mt-3 text-left text-center text-white">Subcribe to our newsletter and get notified about our latest updates.</p>
+           <input class="lg:w-96 rounded-sm p-2 mt-5" type="text" name="" placeholder="Username">
+           <button class="bg-[#52CCCC] rounded-sm lg:w-96 p-2 mt-5">SUBSCRIBE</button>
+           <p class="mt-3 text-left text-center text-white mx">We have solutions to all your problems. Shake your hands with us and you will never face any technology related issues anymore. We assure to be your best friend who will always be there in any problem.</p>
+        </div>
+</div>
+</section>
+
+<!-- ...........................  subscribe section end  ............................ -->
+
+<!-- ............................... choose us section ......................... -->
+
+<section>
+  <div>
+    <p class="text-3xl mt-[50px] text-center font-bold">Reasons to Choose Us</p>
+    <p class="text-lg text-center mt-5">We at Whiltor Focus on Understanding Your Business Objectives and Target and Treat them as Our Own.</p>
+  </div>
+
+  <div class="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 mt-5 ">
+
+      <div class="pl-[100px]"><img src="{% static 'image/w_ser8.png' %}"></div>
+
+        <div class="">
+          <div class="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 grid-cols-1 gap-3 mx-3">
+              <div class="p-3 bg-white rounded-xl h-fit">
+                  <img class="w-28" src="{% static 'image/target-outline.gif' %}">
+                  <p class="text-xl text-center">24/7 Availability</p>
+                  <p class="text-center">Offering 24/7 Experts Availability</p>
+              </div>
+
+              <div>
+                  <div class="p-3 bg-white rounded-xl">
+                    <img class="w-28" src="{% static 'image/consultation-outline.gif' %}">
+                    <p class="text-xl text-center">Expert Solutions</p>
+                    <p class="text-center">Precise & Effective Expert Solutions</p>
+                  </div>
+                  <div class="p-3 bg-white rounded-xl mt-3">
+                    <img class="w-28 bg-transparent" src="{% static 'image/success-outline.gif' %}">
+                    <p class="text-xl text-center">Industrial Insights</p>
+                    <p class="text-center">Deep Consulting Expertise Insights.</p>
+                  </div>
+              </div>
+
+               <div class="p-3 bg-white rounded-xl h-fit">
+                  <img class="w-28" src="{% static 'image/target-outline.gif' %}">
+                  <p class="text-xl text-center">Morden Technology</p>
+                  <p class="text-center">Latest and Advanced Technology</p>
+                </div>
+          </div>
+
+        </div>
+  </div>
+</section>
+
+
+                  
+
+<!-- .......................... choose us section end  ............................. -->
+
+
+{% endblock %}
+
